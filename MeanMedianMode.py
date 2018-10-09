@@ -1,3 +1,8 @@
+"""
+Problem:
+https://www.hackerrank.com/challenges/s10-basic-statistics/problem
+"""
+
 from math import ceil
 from collections import Counter, OrderedDict
 
@@ -32,4 +37,3 @@ N = int(input())
 numbers = list(map(int, input().split()))
 
 calculateMeanMedianMode(numbers)
-
