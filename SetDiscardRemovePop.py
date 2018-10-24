@@ -1,0 +1,12 @@
+"""
+Problem:
+https://www.hackerrank.com/challenges/py-set-discard-remove-pop/problem
+"""
+
+n = int(input())
+s = set(map(int, input().split()))
+
+for _ in range(int(input())):
+    command, *args = list(input().split())
+    getattr(s, command)(*map(int, args))
+print(sum(s))
